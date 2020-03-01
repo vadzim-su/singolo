@@ -1,0 +1,200 @@
+.container {
+	width: 100%;
+	max-width: 940px; 
+	margin: auto;
+}
+
+.section {
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+/*portfolio*/
+
+	.portfolio {
+		padding: 65px 0 48px;
+		background-color: #2d303a;
+		border-bottom: 6px solid #323746;
+	}
+
+	.block_title {
+		font-size: 30px;
+		line-height: 18px;
+		color: #666d89;
+		font-family: 'latoblack';
+		font-weight: 900;
+		margin-bottom: 28px;
+	}
+
+	.block_info {
+		font-size: 18px;
+		line-height: 30px;
+		color: #767e9e;
+		font-family: 'latolight';
+		font-weight: 300;
+		margin-bottom: 10px;
+		letter-spacing: -0.22px;
+		text-align: justify;
+	}
+
+	.image_buttons {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 17px;
+	}
+
+	.image_buttons li {
+		margin-right: 10px;
+		cursor: pointer;
+		padding: 5px 7px;
+		border-radius: 5px;
+		background-color: #0f0f0f;
+		border: 1px solid #666d89; 
+		font-size: 12px;
+		line-height: 1;
+		color: #767e9e;
+		font-family: 'latoregular';
+		font-weight: 400;
+	}
+
+	.image_buttons li:nth-of-type(2){
+		padding: 5px 6px;
+	}
+
+	.image_buttons li:nth-of-type(3){
+		padding: 5px 6px;
+		margin-right: 8px;
+	}
+
+	.image_buttons li:nth-of-type(4){
+		padding: 5px 6px;
+	}
+
+	.image_buttons li:hover {
+		border: 1px solid #fff;
+		color: #fff;
+		transition: .2s linear;
+	}
+
+	.image_buttons li:active {
+		border: 1px solid #666d89;
+		color: #767e9e;
+		transition: .1s linear;
+	}
+
+	.images_block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.images_block img {
+		margin-bottom: 20px;
+		display: block;
+
+	}
+
+	.images_block img:nth-of-type(n+13){
+		display: none;
+	}
+
+/*about*/
+
+	.about {
+		padding: 68px 0;
+		background-color: #F2F2F2;
+		border-bottom: 6px solid #fff;
+	}
+
+	.team_block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 15px;
+		margin-top: 45px;
+	}
+
+	.team {
+		width: 300px;
+	}
+
+	.team img {
+		display: block;
+		margin-bottom: 17px
+	}
+
+	.name {
+		display: block;
+		font-size: 18px;
+		line-height: 18px;
+		color: #666d89;
+		font-family: 'latoblack';
+		font-weight: 900;
+		margin-bottom: 10px;
+		letter-spacing: -0.15px;
+	}
+
+	.team_info {
+		font-size: 12px;
+		line-height: 22px;
+		color: #767e9e;
+		font-family: 'latoregular';
+		font-weight: 400;
+		margin-bottom: 23px;
+		text-align: justify;
+	}
+
+	.social_block {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.border {
+		display: flex;
+		width: 33px;
+		height: 33px;
+		border: 1px solid #666d89;
+		border-radius: 50%;
+		margin-right: 7px;
+    	box-sizing: border-box;
+	}
+
+	.facebook {
+		background: url(../images/facebook.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+
+	.google {
+		background: url(../images/google-plus.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+
+	.twitter {
+		background: url(../images/twitter.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+
+	.linkedin {
+		background: url(../images/linkedin.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+	
+	.border:hover {
+		cursor: pointer;
+		background-color: #b9aedf;
+		transition: .2s linear;
+	} 
+
+	.border:active {
+		background-color: #fff;
+	} 
+
