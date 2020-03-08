@@ -1,0 +1,244 @@
+.container {
+	width: 100%;
+	max-width: 940px; 
+	margin: auto;
+}
+
+.section {
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+/*quote*/
+
+	.quote {
+		padding: 63px 0 49px;
+		background-color: #f06c64;
+		border-bottom: 6px solid #ea676b;
+	}
+
+	.quote_block .block_title {
+		font-size: 30px;
+		line-height: 1;
+		color: #f0d8d9;
+		font-family: 'latoblack';
+		font-weight: 900;
+		margin-bottom: 21px;
+	}
+
+	.quote_block .block_info {
+		font-size: 18px;
+		line-height: 30px;
+		color: #f0d8d9;
+		font-family: 'latolight';
+		font-weight: 300;
+		text-align: justify;
+		margin-bottom: 44px;
+		letter-spacing: -0.1px;
+	}
+
+	.formBlock {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.userInfo {
+		width: 66%;
+		position: relative;
+	}
+
+	.userInfo input {
+		width: 100%;
+		box-sizing: border-box;
+		display: block;
+		border-radius: 5px;
+		background-color: #d6564f;
+		font-size: 12px;
+		line-height: 1;
+		color: #f0d8d9;;
+		font-family: 'latoregular';
+		font-weight: 400;
+		padding: 10px 0 11px 15px;
+		border: none;
+		margin-bottom: 17px;
+		outline: none;
+	}
+
+	::-webkit-input-placeholder {
+		color:#f48c8f;
+	}
+	:-moz-placeholder {
+		color:#f48c8f;
+	}
+	:-ms-input-placeholder {
+		color:#f48c8f;
+	}
+
+	.userInfo input:focus {
+		background-color: #8e5050;
+	}
+
+	form input:last-of-type {
+		height: 203px;
+		padding-bottom: 177px;
+	}
+
+	.userInfo button {
+		position: absolute;
+		right: -220px;
+		bottom: 20px;
+		padding: 10px 35px;
+		border-radius: 7px;
+		border: none;
+		font-size: 16px;
+		background-color: #f0d8d9;
+		outline: none;
+	}
+
+	.userInfo button:hover {
+		opacity: .7;
+		cursor: pointer;
+	}
+
+	.userInfo button:active {
+		opacity: 1;
+	}
+
+	.contactInfo {
+		width: 32%;
+	}
+
+	.contactInfo h3 {
+		font-size: 18px;
+		line-height: 19px;
+		color: #f0d8d9;
+		font-family: 'latoblack';
+		font-weight: 900;
+		margin-bottom: 8px;
+	}
+
+	.contactInfo p {
+		font-size: 12px;
+		line-height: 22px;
+		color: #f0d8d9;
+		font-family: 'latoregular';
+		font-weight: 400;
+		text-align: justify;
+		margin-bottom: 26px;
+	}
+
+	.requisites li {
+		margin-left: 4px;
+		margin-bottom: 9px;
+		display: flex;
+		justify-content: start;
+	}
+
+	.requisites li a{
+		display: block;
+		font-size: 12px;
+		color: #F0D8D9;
+		font-family: 'latoregular';
+		font-weight: 400;
+	}
+
+	.requisites li i {
+		font-size: 11px;
+		font-family: fontawesome;
+		color: #F0D8D9;
+		display: block;
+		margin-right: 10px;
+	}
+
+	.fa-phone {
+		transform: scale(-1, 1);
+	}
+
+	li i.fa-envelope {
+		margin-top: 2px;
+		font-size: 11px;	
+	}
+
+/*footer*/
+
+.footer {
+		padding: 22px 0 21px;
+		background-color: #2D303A;
+		border-bottom: 6px solid #fff;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer span {
+		display: block;
+		font-size: 12px;
+		line-height: 33px;
+		color: #666D89;
+		font-family: 'latoregular';
+		font-weight: 400;
+		margin-left: 2px;
+		letter-spacing: -0.23px;
+	}
+
+	.social_block {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	footer .social_block {
+		margin-right: -8px;
+	}
+
+	.border {
+		display: flex;
+		width: 33px;
+		height: 33px;
+		border: 1px solid #666d89;
+		border-radius: 50%;
+		margin-right: 7px;
+    	box-sizing: border-box;
+	}
+
+	.facebook {
+		background: url(../images/facebook.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+
+	.google {
+		background: url(../images/google-plus.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+
+	.twitter {
+		background: url(../images/twitter.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+
+	.linkedin {
+		background: url(../images/linkedin.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 14px;
+	}
+	
+	.border:hover {
+		cursor: pointer;
+		background-color: #b9aedf;
+		transition: .2s linear;
+	} 
+
+	.border:active {
+		background-color: #fff;
+	} 
+
