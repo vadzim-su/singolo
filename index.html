@@ -30,7 +30,7 @@
 
 				<nav class="navbar">
 					<ul>
-						<li><a href="#home">HOME</a></li>
+						<li><a class="active" href="#home">HOME</a></li>
 						<li><a href="#services">SERVICES</a></li>
 						<li><a href="#portfolio">PORTFOLIO</a></li>
 						<li><a href="#about">ABOUT</a></li>
@@ -45,18 +45,31 @@
 	</section>
 
 
-	<section class="slider">
+	<section class="slider section" id="home">
 
-		<div class="container slider_block">
+		<div class="container slider_block slides">
 
-			<div class="vertical">
-				<img class="vert_phone" src="assets/images/iphone.png" alt="">
-				<img class="vert_img" src="assets/images/vertic.png" alt="">
+			<div class="slide first_slide" id="first_slide">
+				<div class="vertical">
+					<img class="vert_phone" src="assets/images/iphone.png" alt="">
+					<img class="vert_img" src="assets/images/vertic.png" alt="">
+				</div>
+
+				<div class="horizontal">
+					<img class="horiz_phone" src="assets/images/iphone.png" alt="">
+					<img class="horiz_img" src="assets/images/horiz.png" alt="">
+				</div>
 			</div>
 
-			<div class="horizontal">
-				<img class="horiz_phone" src="assets/images/iphone.png" alt="">
-				<img class="horiz_img" src="assets/images/horiz.png" alt="">
+			<!-- <div class="slide second_slide" id="second_slide">
+				<img class="left_img" src="assets/images/slider-content-left.png" alt="">
+				<img class="center_img" src="assets/images/slider-center.png" alt="">
+				<img class="right_img" src="assets/images/slider-content-left.png" alt="">
+			</div> -->
+
+			<div class="arrows">
+				<img class="left_arrow" src="./assets/images/arrow-left.png" alt="">
+				<img class="right_arrow" src="./assets/images/arrow-right.png" alt="">
 			</div>
 
 		</div>
@@ -64,7 +77,7 @@
 	</section>
 
 
-	<section class="services" id="services">
+	<section class="services section" id="services">
 
 		<div class="container services_block">
 
@@ -143,7 +156,7 @@
 
 	<!-- singolo_2 -->
 
-	<section class="portfolio" id="portfolio"> 
+	<section class="portfolio section" id="portfolio"> 
 
 		<div class="container portfolio_block">
 
@@ -177,7 +190,7 @@
 	</section>
 
 
-	<section class="about" id="about">
+	<section class="about section" id="about">
 
 		<div class="container about_block">
 
@@ -234,7 +247,7 @@
 
 	<!-- singolo_3 -->
 
-	<section class="quote" id="contact">
+	<section class="quote section" id="contact">
 
 		<div class="container quote_block">
 
