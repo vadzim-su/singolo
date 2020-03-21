@@ -33,6 +33,7 @@ function onScroll(event){
 let phones = document.querySelectorAll('.slide>div')
 let phonesDisplay = document.querySelectorAll('.slide>div>img:last-of-type')
 
+
 for (let i = 0; i < phones.length; i++) {
     phones[i].addEventListener('click', dissapearImg)
     function dissapearImg (){
@@ -45,6 +46,11 @@ for (let i = 0; i < phones.length; i++) {
 
 
 let tabs = document.querySelectorAll('.image_buttons>li')
+let images = document.querySelectorAll('.images_block>img')
+let imagesBlock = document.querySelector('.images_block')
+let classArray = []
+let newClassArray =[]
+console.log(images)
 
 tabs.forEach((item) => {
     item.addEventListener('click', activeTab)
@@ -55,9 +61,19 @@ tabs.forEach((item) => {
         })
         this.classList.add('activeTab')
         
-    }
+        images.forEach((item) => {
+            item.setAttribute('class', Math.floor(Math.random() * images.length))
+            classArray.push(item)
+        })
+        console.log(classArray)
+        classArray.sort((a, b) => a.getAttribute("class") - b.getAttribute("class"))
+        console.log(classArray)
 
-// ......
+        imagesBlock.innerHTML = ''
+        classArray.forEach(item => imagesBlock.appendChild(item))
+
+        classArray = []
+    }
 
 
 //Portfolio. Взаимодействие с картинками
