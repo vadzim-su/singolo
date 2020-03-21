@@ -262,9 +262,9 @@
 
 					<input type="text" placeholder="Name (Required)" required>
 					<input type="email" placeholder="Email (Required)" required>
-					<input type="text" placeholder="Subject">
-					<input type="text" placeholder="Describe your project in detail...">
-					<button>Submit</button>
+					<input class="inputData" type="text" placeholder="Subject">
+					<input class="inputData" type="text" placeholder="Describe your project in detail...">
+					<button id="submit">Submit</button>
 
 				</form>
 
@@ -292,6 +292,25 @@
 
 				</div>
 
+			</div>
+
+
+			<div class="popup" id="popup">
+				<div class="popup__content ">
+		
+					<i class="fas fa-times popup_close"></i>
+
+					<span class="popup__sent">The letter was sent</span>
+		
+					<div class="popup__body">
+		
+						
+
+					</div>
+
+					<input type="submit" value="OK" class="button_ok">
+		
+				</div>
 			</div>
 
 		</div>
@@ -326,3 +345,6 @@
 </body>
 
 </html>
+
+
+

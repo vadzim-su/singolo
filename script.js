@@ -1,22 +1,5 @@
 // Header
-
-        // var#1
-
-// const anchors = document.querySelectorAll('a[href^="#"]')
-// console.log(anchors)
-
-// for(let anchor of anchors) {
-//     anchor.addEventListener('click', function(e){
-//         e.preventDefault();
-//         const tagsID = anchor.getAttribute('href')
-//         document.querySelector('' + tagsID).scrollIntoView({
-//             behavior: "smooth",
-//             block: "start"
-//         })
-//     })
-// }
-
-        // var#2   
+ 
         
 document.addEventListener('scroll', onScroll )
 
@@ -62,7 +45,6 @@ for (let i = 0; i < phones.length; i++) {
 
 
 let tabs = document.querySelectorAll('.image_buttons>li')
-console.log(tabs)
 
 tabs.forEach((item) => {
     item.addEventListener('click', activeTab)
@@ -75,7 +57,7 @@ tabs.forEach((item) => {
         
     }
 
-
+// ......
 
 
 //Portfolio. Взаимодействие с картинками
@@ -94,3 +76,64 @@ portfolioImage.forEach((item) => {
         this.classList.add('activeImage')
         
     }
+
+
+    //Get a quote
+
+
+    let submit = document.querySelector('#submit')
+    let inputData = document.querySelectorAll('.inputData')
+    let showPopup = document.querySelector('#popup')
+    let closePopup = document.querySelector('.popup_close');
+    let buttonOk = document.querySelector('.button_ok')
+    let userInfo = document.querySelector('.popup__body')
+    let allInputs = document.querySelectorAll('.userInfo>input')
+
+    submit.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        showPopup.style.display = 'block'
+
+        let span1 = document.createElement('span')
+        if(inputData[0].value){
+            span1.innerHTML = 'Subject: ' + inputData[0].value
+           } 
+           else {
+            span1.innerHTML = 'No subject'
+           }
+          
+
+        let span2 = document.createElement('span')
+        if(inputData[1].value){
+            span2.innerHTML = 'Description: ' + inputData[1].value
+           } 
+           else {
+            span2.innerHTML = 'No description'
+           }
+        userInfo.appendChild(span1)
+        userInfo.appendChild(span2)
+        
+        buttonOk.onclick = closePopup.onclick = function(){
+            showPopup.style.display = 'none'
+            allInputs.forEach((item) => {
+                item.value = ''
+            }) 
+    
+            span1.remove()
+            span2.remove()
+    
+        }
+
+    });
+
+    closePopup.onclick = function () {
+        showPopup.style.display = 'none'
+    }
+
+    // window.onclick = function (e) {
+    //     if (e.target == showPopup) {
+    //         showPopup.style.display = 'none'
+    //     }
+    // }
+
+
