@@ -795,15 +795,15 @@ footer .social_block {
   .vertical .vert_img {
     width: 87%;
     position: absolute;
-    top: 67px;
-    left: 15px;
+    top: 51px;
+    left: 11px;
   }
 
   .horizontal .horiz_img {
     width: 72.8%;
     position: absolute;
-    top: 14px;
-    left: 61px;
+    top: 11px;
+    left: 46px;
   }
 }
 
@@ -957,6 +957,38 @@ footer .social_block {
 
   footer .social_block {
     margin: auto;
+  }
+
+  /* bar */
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(45, 48, 58, 0.6);
+    box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .sideBar {
+    width: 70%;
+    height: 100%;
+    background: rgb(45, 48, 58);
+  }
+
+  .new_menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .new_menu i {
+    color: #ffffff;
+    font-family: fontawesome;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
   }
 }
 

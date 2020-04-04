@@ -25,8 +25,8 @@ function onScroll(event) {
 
 // Slider. Активация экранов телефонов
 
-let phones = document.querySelectorAll(".slide>div");
-let phonesDisplay = document.querySelectorAll(".slide>div>img:last-of-type");
+const phones = document.querySelectorAll(".slide>div");
+const phonesDisplay = document.querySelectorAll(".slide>div>img:last-of-type");
 
 for (let i = 0; i < phones.length; i++) {
   phones[i].addEventListener("click", dissapearImg);
@@ -37,11 +37,11 @@ for (let i = 0; i < phones.length; i++) {
 
 //Portfolio. Переключение табов
 
-let tabs = document.querySelectorAll(".image_buttons>li");
-let images = document.querySelectorAll(".images_block>img");
-let imagesBlock = document.querySelector(".images_block");
-let classArray = [];
-let newClassArray = [];
+const tabs = document.querySelectorAll(".image_buttons>li");
+const images = document.querySelectorAll(".images_block>img");
+const imagesBlock = document.querySelector(".images_block");
+const classArray = [];
+const newClassArray = [];
 
 tabs.forEach(item => {
   item.addEventListener("click", activeTab);
@@ -56,19 +56,18 @@ function activeTab() {
     item.setAttribute("class", Math.floor(Math.random() * images.length));
     classArray.push(item);
   });
-  console.log(classArray);
+
   classArray.sort((a, b) => a.getAttribute("class") - b.getAttribute("class"));
-  console.log(classArray);
 
   imagesBlock.innerHTML = "";
   classArray.forEach(item => imagesBlock.appendChild(item));
 
-  classArray = [];
+  //   classArray = [];
 }
 
 //Portfolio. Взаимодействие с картинками
 
-let portfolioImage = document.querySelectorAll(".images_block>img");
+const portfolioImage = document.querySelectorAll(".images_block>img");
 
 portfolioImage.forEach(item => {
   item.addEventListener("click", activeImage);
@@ -133,7 +132,24 @@ closePopup.onclick = function() {
 
 //bar
 
+const logo = document.querySelector(".logo");
 const bar = document.querySelector(".bar");
+const navbar = document.querySelector(".navbar");
+const overlay = document.createElement("div");
+const sideBar = document.createElement("div");
+const logoHead = document.createElement("div");
+
 bar.addEventListener("click", () => {
   bar.classList.add("rotate");
+
+  sideBar.appendChild(logoHead);
+  sideBar.appendChild(navbar);
+  overlay.appendChild(sideBar);
+  document.body.appendChild(overlay);
+
+  overlay.classList.add("overlay");
+  sideBar.classList.add("sideBar");
+  logoHead.classList.add("new_menu");
+
+  logoHead.innerHTML = bar.innerHTML + logo.innerHTML;
 });
